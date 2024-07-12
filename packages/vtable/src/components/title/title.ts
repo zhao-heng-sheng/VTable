@@ -30,6 +30,7 @@ export class Title {
       }
     } else {
       const title = new TitleComponents(attrs);
+      console.log(title)
       title.name = 'title';
       this.table.scenegraph.stage.defaultLayer.appendChild(title);
       this._titleComponent = title;
