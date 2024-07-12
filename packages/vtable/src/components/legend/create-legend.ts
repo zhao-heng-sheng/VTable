@@ -10,6 +10,7 @@ export type CreateLegend = (
 export function createLegend(option: ITableLegendOption, table: BaseTableAPI) {
   if (option.type === 'color' || option.type === 'size') {
     return new ContinueTableLegend(option, table);
+    console.log(123)
   }
   return new DiscreteTableLegend(option, table);
 }
